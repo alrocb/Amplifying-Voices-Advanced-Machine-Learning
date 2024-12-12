@@ -11,7 +11,8 @@ This repository contains the implementation, datasets, and experiments for our p
 - [Introduction](#introduction)
 - [Features](#features)
 - [Setup](#setup)
-  - [Dependencies](#dependencies)
+  - [Dependencies](#main-dependencies)
+  - [Installation](#installation)
 - [Data](#data)
 - [Training Phases](#training-phases)
   - [Pretraining](#pretraining)
@@ -36,7 +37,7 @@ We leverage **Mozilla Common Voice**, a community-driven dataset, to train and e
 ---
 
 ## **Features**
-- **Self-Supervised Pretraining:** Train Wav2Vec2 from scratch on Catalan using unlabeled data.
+- **Self-Supervised Pretraining and Finetuning:** Train Wav2Vec2 from scratch on Catalan using unlabeled data and finetuning for ASR task using small sources of labeled data (transcriptions).
 - **Fine-Tuning:** Fine-tune pretrained models (e.g., Spanish, English, multilingual) for Catalan ASR.
 - **Extended Applications:** Apply learned embeddings to accent recognition and gender classification.
 - **Model Interpretability:** Use Grad-CAM to visualize the model’s focus during transcription.
@@ -45,24 +46,27 @@ We leverage **Mozilla Common Voice**, a community-driven dataset, to train and e
 
 ## **Setup**
 
-### **Dependencies**
+### **Main Dependencies**
 - Python >= 3.8
 - Transformers (`pip install transformers`)
 - Datasets (`pip install datasets`)
 - PyTorch with CUDA support
 - Additional libraries: pandas, scikit-learn, wandb
 ### **Installation**
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/your-repo-name.git
-   cd your-repo-name
-2.Install the required dependencies:
-pip intall -r requirements.txt
 
+1.Clone the repository:
+  ```bash
+git clone https://github.com/yourusername/your-repo-name.git
+cd your-repo-name
+   ```
+2.Install the required dependencies:
+  ```bash
+pip install -r requirements.txt
+   ```
 ---
 
 ## **Data**
-We use **Mozilla Common Voice**, particularly versions 18.0 and 19.0 for Catalan. You can download the dataset from [Common Voice](https://commonvoice.mozilla.org/). 
+We use **Mozilla Common Voice**, particularly versions 18.0 and 19.0 for Catalan labeled source. You can download the dataset from [Common Voice](https://commonvoice.mozilla.org/). 
 
 - **Data Preparation:**
    - Audio is resampled to 16kHz.
@@ -99,10 +103,10 @@ We use **Mozilla Common Voice**, particularly versions 18.0 and 19.0 for Catalan
 | Multilingual-Pretrained| 0.10            | 0.9768                | 0.9725                 |
 
 ### **Qualitative Results**
-See example transcriptions in the [`examples/`](examples/) folder.
+See example transcriptions in the inference notebook.
 
 ### **Grad-CAM Visualizations**
-Grad-CAM heatmaps illustrate how the model focuses on specific audio segments during transcription. View examples in the [`visualizations/`](visualizations/) folder.
+Grad-CAM heatmaps illustrate how the model focuses on specific audio segments during transcription. View examples in the explainability notebook.
 
 ---
 
@@ -111,7 +115,6 @@ If you use this work, please consider citing:
 ```plaintext
 @article{yourcitation,
   title={Amplifying Voices: Self-Supervised Learning for Low-Resource and Minority Languages},
-  author={Your Name, Co-Author Name},
-  journal={Your Conference/Journal},
+  author={Alex Roldan},
   year={2024}
 }
