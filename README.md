@@ -112,6 +112,10 @@ See example transcriptions in the inference notebook.
 ### **Grad-CAM Visualizations**
 Grad-CAM heatmaps illustrate how the model focuses on specific audio segments during transcription. View examples in the explainability notebook.
 
+### Visualization on Model Overview Pretraining
+
+![image](https://github.com/user-attachments/assets/96c4ff33-21a3-4419-8363-213d7fefe316)
+
 ---
 
 ## **Citation**
