@@ -132,3 +132,5 @@ If you use this work, please consider citing:
 
   - GitHub: [GitHub Profile](https://github.com/alrocb)
   - LinkedIn: [LinkedIn](https://www.linkedin.com/in/alex-roldan-55488a215/)
+
+If you need the weights for the models, contact me.
