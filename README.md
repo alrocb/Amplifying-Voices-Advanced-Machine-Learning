@@ -48,6 +48,13 @@ We leverage **Mozilla Common Voice**, a community-driven dataset, to train and e
 - Datasets (`pip install datasets`)
 - PyTorch with CUDA support
 - Additional libraries: pandas, scikit-learn, wandb
+### **Installation**
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/your-repo-name.git
+   cd your-repo-name
+2.Install the required dependencies:
+pip intall -r requirements.txt
 
 ---
 
