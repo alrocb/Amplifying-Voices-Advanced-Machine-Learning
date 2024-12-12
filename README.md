@@ -1,4 +1,8 @@
+<div align="center">
+
 # **Amplifying Voices: Self-Supervised Learning for Low-Resource and Minority Languages**
+
+</div>
 
 ![image](https://github.com/user-attachments/assets/20be09ae-d310-49d6-a029-917a013e3cd2)
 
