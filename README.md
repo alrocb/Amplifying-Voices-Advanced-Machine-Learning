@@ -1,6 +1,7 @@
 # **Amplifying Voices: Self-Supervised Learning for Low-Resource and Minority Languages**
 
-![image](https://github.com/user-attachments/assets/a69b8299-e384-4456-b252-99f7b0c50a2d)
+![image](https://github.com/user-attachments/assets/20be09ae-d310-49d6-a029-917a013e3cd2)
+
 
 This repository contains the implementation, datasets, and experiments for our project exploring self-supervised learning (SSL) for Automatic Speech Recognition (ASR) in low-resource languages, with a focus on Catalan. We also extend the model's capabilities to tasks like **accent recognition** and **gender detection**.
 
