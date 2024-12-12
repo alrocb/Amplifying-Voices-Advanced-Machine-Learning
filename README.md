@@ -117,7 +117,7 @@ Grad-CAM heatmaps illustrate how the model focuses on specific audio segments du
 ## **Citation**
 If you use this work, please consider citing:
 ```plaintext
-@article{yourcitation,
+@article{
   title={Amplifying Voices: Self-Supervised Learning for Low-Resource and Minority Languages},
   author={Alex Roldan},
   year={2024}
